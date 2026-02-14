@@ -1,6 +1,6 @@
 package model;
 
-public class Carro {
+public class Carro implements Veiculo {
 
     public Carro() {
 
@@ -46,5 +46,31 @@ public class Carro {
                 ", ano=" + ano +
                 ", marca='" + marca + '\'' +
                 '}';
+    }
+
+    @Override
+    public void ligar() {
+        System.out.println("Carro ligou!");
+    }
+
+    @Override
+    public void acelerar() {
+        System.out.println("Carro acelerou!");
+
+    }
+
+    @Override
+    public void frear() {
+        System.out.println("Carro freou!");
+    }
+
+    @Override
+    public void virar(String direcao) {
+        System.out.println("Carro virou na direção " + direcao);
+    }
+
+    @Override
+    public void desligar() {
+        System.out.println("Carro desligou!");
     }
 }

@@ -1,9 +1,10 @@
 import model.Carro;
+import model.CarroEsportivo;
 
 public class Main {
     public static void main(String[] args) {
-        Carro carro = new Carro("Fusca", 1975, "VW");
-
+        CarroEsportivo carro = new CarroEsportivo("206", 2008, "Pegeot", true);
         System.out.println(carro.toString());
+        carro.ligar();
     }
 }
